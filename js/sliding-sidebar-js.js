@@ -7,9 +7,13 @@ jQuery( window ).resize(function() {
     ManageSlidingSidebarPosition();
 });
 function ManageSlidingSidebarPosition(){
-    if(jQuery(window).width() < 923 && slidingSidebarPosition != "mobile"){
+    //console.log("position: " + slidingSidebarPosition);
+    //console.log("window width: " + window.innerWidth);
+    if(window.innerWidth < 922 && slidingSidebarPosition != "mobile"){
+        //console.log("Moving sidebar to mobile");
         MoveSidebarToMobile();
-    }else if(jQuery(window).width() >= 923 && slidingSidebarPosition != "desktop"){
+    }else if(window.innerWidth >= 922 && slidingSidebarPosition != "desktop"){
+        //console.log("Moving sidebar to desktop");
         MoveSidebarToDesktop();
     }
     

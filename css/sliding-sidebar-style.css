@@ -102,7 +102,7 @@
   margin-top: 10px;
 }
 
-@media only screen and (max-width: 922px) {
+@media only screen and (max-width: 921px) {
   .sliding-sidebar-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
