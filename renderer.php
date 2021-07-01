@@ -1,5 +1,9 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit();
+}
+
 class Renderer{
     public static function RenderSidebar(){
         self::Render('sidebar', array(), true);

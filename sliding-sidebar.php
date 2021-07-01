@@ -3,6 +3,10 @@
  * Plugin Name: sliding-sidebar
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit();
+}
+
 const SLIDING_SIDEBAR_ROOT = __DIR__;
 
 require_once SLIDING_SIDEBAR_ROOT . '/renderer.php';
